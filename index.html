@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <noscript><style>body{visibility:visible}</style></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -22,18 +23,21 @@
   }
   </script>
 </head>
-<body>
-  <a class="skip" href="#content">Skip to content</a>
+<body data-page="home">
+  <a class="skip" href="#content" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="40" height="40"><span>Keep My People</span></a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Product</a>
-        <a href="how-to/">How to use</a>
-        <a href="index.html#plans">Plans</a>
-        <a href="privacy/">Privacy</a>
-        <a href="delete-account/">Delete account</a>
-      </nav>
+      <div class="header-end">
+        <nav class="nav" aria-label="Primary" data-i18n-aria="nav.label">
+          <a href="index.html" aria-current="page" data-i18n="nav.product">Product</a>
+          <a href="how-to/" data-i18n="nav.howto">How to use</a>
+          <a href="index.html#plans" data-i18n="nav.plans">Plans</a>
+          <a href="privacy/" data-i18n="nav.privacy">Privacy</a>
+          <a href="delete-account/" data-i18n="nav.delete">Delete account</a>
+        </nav>
+        <div class="lang-switch" data-lang-switch></div>
+      </div>
     </div>
   </header>
 
@@ -42,130 +46,130 @@
       <section class="hero">
         <div>
           <p class="kicker">Keep My People</p>
-          <h1>A private map for the people who agreed to be on it.</h1>
-          <p class="lede"><span class="tagline">Stay close. Stay safe.</span> Keep My People lets a group share live location, chat, and an SOS alert. Sharing starts only after you turn it on, and the people who can see you are the members of a group you joined.</p>
+          <h1 data-i18n="home.hero.title">A private map for the people who agreed to be on it.</h1>
+          <p class="lede"><span class="tagline" data-i18n="common.tagline">Stay close. Stay safe.</span> <span data-i18n="home.hero.lede">Keep My People lets a group share live location, chat, and an SOS alert. Sharing starts only after you turn it on, and the people who can see you are the members of a group you joined.</span></p>
           <div class="badge-row">
-            <span class="badge badge-live"><span class="dot" aria-hidden="true"></span>Android on Google Play</span>
-            <span class="badge badge-soon"><span class="dot" aria-hidden="true"></span>iOS in development</span>
+            <span class="badge badge-live"><span class="dot" aria-hidden="true"></span><span data-i18n="home.badge.android">Android on Google Play</span></span>
+            <span class="badge badge-soon"><span class="dot" aria-hidden="true"></span><span data-i18n="home.badge.ios">iOS in development</span></span>
           </div>
           <div class="actions">
             <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.keepmypeople">Google Play</a>
-            <a class="btn btn-ghost" href="how-to/">Read the full guide</a>
+            <a class="btn btn-ghost" href="how-to/" data-i18n="home.guide">Read the full guide</a>
           </div>
         </div>
-        <aside class="stage-card" aria-label="Illustrated group list">
-          <div class="stage-top"><span>Evening group</span><span class="pill">3 people</span></div>
-          <div class="person"><span class="avatar mint">A</span><div><strong>You</strong><small>Sharing location · Battery 72%</small></div></div>
-          <div class="person"><span class="avatar cyan">M</span><div><strong>Member</strong><small>Sharing location · Updated just now</small></div></div>
-          <div class="person"><span class="avatar peri">S</span><div><strong>Member</strong><small>Not sharing</small></div></div>
-          <p class="stage-note">Illustration of a group list. Names and battery levels are examples, not a live map.</p>
+        <aside class="stage-card" aria-label="Illustrated group list" data-i18n-aria="home.stage.label">
+          <div class="stage-top"><span data-i18n="home.stage.group">Evening group</span><span class="pill" data-i18n="home.stage.count">3 people</span></div>
+          <div class="person"><span class="avatar mint">A</span><div><strong data-i18n="home.stage.you">You</strong><small data-i18n="home.stage.youMeta">Sharing location · Battery 72%</small></div></div>
+          <div class="person"><span class="avatar cyan">M</span><div><strong data-i18n="home.stage.member">Member</strong><small data-i18n="home.stage.memberOn">Sharing location · Updated just now</small></div></div>
+          <div class="person"><span class="avatar peri">S</span><div><strong data-i18n="home.stage.member">Member</strong><small data-i18n="home.stage.memberOff">Not sharing</small></div></div>
+          <p class="stage-note" data-i18n="home.stage.note">Illustration of a group list. Names and battery levels are examples, not a live map.</p>
         </aside>
       </section>
 
-      <aside class="notice" aria-label="iOS status">
+      <aside class="notice" aria-label="iOS status" data-i18n-aria="home.ios.label">
         <div class="ios-mark" aria-hidden="true">iOS</div>
         <div>
-          <strong>The iOS app is in development.</strong>
-          <p>Keep My People is not on the App Store. Install and use it on Android. Descriptions of iPhone behavior on this site explain how the product is built to work once the iOS app is released.</p>
+          <strong data-i18n="home.ios.title">The iOS app is in development.</strong>
+          <p data-i18n="home.ios.body">Keep My People is not on the App Store. Install and use it on Android. Descriptions of iPhone behavior on this site explain how the product is built to work once the iOS app is released.</p>
         </div>
       </aside>
 
       <section class="section" id="product">
         <div class="section-head">
-          <p class="kicker">How a group works</p>
-          <h2>Everyone in the group chooses.</h2>
-          <p>Location moves only between members of the same group, and only while that person has sharing turned on.</p>
+          <p class="kicker" data-i18n="home.group.kicker">How a group works</p>
+          <h2 data-i18n="home.group.title">Everyone in the group chooses.</h2>
+          <p data-i18n="home.group.body">Location moves only between members of the same group, and only while that person has sharing turned on.</p>
         </div>
         <div class="principles">
           <article class="principle">
-            <span>You join</span>
-            <h3>Groups are invite-only.</h3>
-            <p>Create a group or enter with a code, link, or QR code someone sent you. A group holds up to 20 members.</p>
+            <span data-i18n="home.p1.kicker">You join</span>
+            <h3 data-i18n="home.p1.title">Groups are invite-only.</h3>
+            <p data-i18n="home.p1.body">Create a group or enter with a code, link, or QR code someone sent you. A group holds up to 20 members.</p>
           </article>
           <article class="principle">
-            <span>You share</span>
-            <h3>The switch starts off.</h3>
-            <p>Live location goes out only after you turn sharing on and allow location permission. You can turn it off at any time.</p>
+            <span data-i18n="home.p2.kicker">You share</span>
+            <h3 data-i18n="home.p2.title">The switch starts off.</h3>
+            <p data-i18n="home.p2.body">Live location goes out only after you turn sharing on and allow location permission. You can turn it off at any time.</p>
           </article>
           <article class="principle">
-            <span>You leave</span>
-            <h3>Leaving closes that room.</h3>
-            <p>When you leave a group, you stop sharing into it and stop seeing that group’s map and chat.</p>
+            <span data-i18n="home.p3.kicker">You leave</span>
+            <h3 data-i18n="home.p3.title">Leaving closes that room.</h3>
+            <p data-i18n="home.p3.body">When you leave a group, you stop sharing into it and stop seeing that group’s map and chat.</p>
           </article>
         </div>
       </section>
 
       <section class="section" aria-labelledby="features-title">
         <div class="section-head">
-          <p class="kicker">What is in the app</p>
-          <h2 id="features-title">The features that ship today.</h2>
-          <p>Each item below is part of Keep My People on Android. Premium items are marked in the plans table.</p>
+          <p class="kicker" data-i18n="home.features.kicker">What is in the app</p>
+          <h2 id="features-title" data-i18n="home.features.title">The features that ship today.</h2>
+          <p data-i18n="home.features.body">Each item below is part of Keep My People on Android. Premium items are marked in the plans table.</p>
         </div>
         <div class="chapters">
           <article class="chapter">
             <b>01</b>
             <div>
-              <h3>Live group map</h3>
-              <p>Open a group and see members who are sharing. Your own pin follows the phone’s GPS. Other members appear from updates the app receives while they share. Profiles can show battery level, whether sharing is on, and when a person was last seen.</p>
+              <h3 data-i18n="home.f1.title">Live group map</h3>
+              <p data-i18n="home.f1.body">Open a group and see members who are sharing. Your own pin follows the phone’s GPS. Other members appear from updates the app receives while they share. Profiles can show battery level, whether sharing is on, and when a person was last seen.</p>
               <ul>
-                <li>While the app is open, movement updates are finer.</li>
-                <li>In the background, updates are slower so the battery lasts longer. Android can still pause an app.</li>
-                <li>If the phone is offline, the latest point is sent when the connection returns. The offline trail is not replayed as a live path.</li>
+                <li data-i18n="home.f1.a">While the app is open, movement updates are finer.</li>
+                <li data-i18n="home.f1.b">In the background, updates are slower so the battery lasts longer. Android can still pause an app.</li>
+                <li data-i18n="home.f1.c">If the phone is offline, the latest point is sent when the connection returns. The offline trail is not replayed as a live path.</li>
               </ul>
             </div>
           </article>
           <article class="chapter">
             <b>02</b>
             <div>
-              <h3>Several groups, one account</h3>
-              <p>You can belong to more than one group. Each group has its own members, map, chat, and SOS. Switch the active group inside the app. Invites can be copied, shared, or shown as a QR code, and they expire.</p>
+              <h3 data-i18n="home.f2.title">Several groups, one account</h3>
+              <p data-i18n="home.f2.body">You can belong to more than one group. Each group has its own members, map, chat, and SOS. Switch the active group inside the app. Invites can be copied, shared, or shown as a QR code, and they expire.</p>
             </div>
           </article>
           <article class="chapter">
             <b>03</b>
             <div>
-              <h3>Group chat and a meetup pin</h3>
-              <p>Send messages to the people in the current group. You can also drop a location into chat, or pick a meetup spot — a saved place or your current location — and post it with an optional note so everyone heads to the same point. A typing indicator shows when someone is writing.</p>
+              <h3 data-i18n="home.f3.title">Group chat and a meetup pin</h3>
+              <p data-i18n="home.f3.body">Send messages to the people in the current group. You can also drop a location into chat, or pick a meetup spot — a saved place or your current location — and post it with an optional note so everyone heads to the same point. A typing indicator shows when someone is writing.</p>
             </div>
           </article>
           <article class="chapter">
             <b>04</b>
             <div>
-              <h3>Places and nearby alerts</h3>
-              <p>Save a place such as home, work, or school. The free plan stores 1 place. Premium stores up to 10. Place alerts tell you when a sharing member arrives or leaves. Distance alerts tell you when a member comes inside a radius you set, or leaves it. Both are available on the free plan.</p>
+              <h3 data-i18n="home.f4.title">Places and nearby alerts</h3>
+              <p data-i18n="home.f4.body">Save a place such as home, work, or school. The free plan stores 1 place. Premium stores up to 10. Place alerts tell you when a sharing member arrives or leaves. Distance alerts tell you when a member comes inside a radius you set, or leaves it. Both are available on the free plan.</p>
             </div>
           </article>
           <article class="chapter">
             <b>05</b>
             <div>
-              <h3>SOS to the group</h3>
-              <p>SOS notifies the other members of the current group and includes the last known location when the phone has one. It does not call police, medical services, or any public emergency number, and it does not record microphone audio.</p>
+              <h3 data-i18n="home.f5.title">SOS to the group</h3>
+              <p data-i18n="home.f5.body">SOS notifies the other members of the current group and includes the last known location when the phone has one. It does not call police, medical services, or any public emergency number, and it does not record microphone audio.</p>
               <ul>
-                <li>Android: with the app allowed to run in the background, turn the screen on and off 5 or more times quickly with the side button. This can work with the screen already off. There is also an in-app SOS button with a 10-second cancel countdown.</li>
-                <li>iOS, once that app is released: the side button cannot be watched by an app. The design uses a firm shake of 3 or more times while Keep My People is open, or the in-app button.</li>
-                <li>People who receive SOS get vibration for about 15 seconds, including when the phone is on silent, because the alert uses the alarm stream. Premium can add sound. It stops if you leave the SOS screen, open the notification, or the sender ends the alert.</li>
+                <li data-i18n="home.f5.a">Android: with the app allowed to run in the background, turn the screen on and off 5 or more times quickly with the side button. This can work with the screen already off. There is also an in-app SOS button with a 10-second cancel countdown.</li>
+                <li data-i18n="home.f5.b">iOS, once that app is released: the side button cannot be watched by an app. The design uses a firm shake of 3 or more times while Keep My People is open, or the in-app button.</li>
+                <li data-i18n="home.f5.c">People who receive SOS get vibration for about 15 seconds, including when the phone is on silent, because the alert uses the alarm stream. Premium can add sound. It stops if you leave the SOS screen, open the notification, or the sender ends the alert.</li>
               </ul>
             </div>
           </article>
           <article class="chapter">
             <b>06</b>
             <div>
-              <h3>History, stays, and drive notes</h3>
-              <p>Location history is kept for about 30 days, and only for times when sharing was on. Premium can play a route for today, yesterday, 7 days, or 30 days. You can open your own stay map on the free plan. Opening another member’s stay map is a Premium feature. Drive reports — trips, distance, time on the road, top speed, speeding, and hard acceleration — are included with Premium. A free account can preview a recent journey after a short ad. Premium skips that ad.</p>
+              <h3 data-i18n="home.f6.title">History, stays, and drive notes</h3>
+              <p data-i18n="home.f6.body">Location history is kept for about 30 days, and only for times when sharing was on. Premium can play a route for today, yesterday, 7 days, or 30 days. You can open your own stay map on the free plan. Opening another member’s stay map is a Premium feature. Drive reports — trips, distance, time on the road, top speed, speeding, and hard acceleration — are included with Premium. A free account can preview a recent journey after a short ad. Premium skips that ad.</p>
             </div>
           </article>
           <article class="chapter">
             <b>07</b>
             <div>
-              <h3>Premium safety alerts</h3>
-              <p>Driving start and stop, speeding above a limit you choose, low battery, and inactivity (the phone has not been used for a stretch you set) are Premium alerts. Emergency SOS alerts themselves are available without Premium.</p>
+              <h3 data-i18n="home.f7.title">Premium safety alerts</h3>
+              <p data-i18n="home.f7.body">Driving start and stop, speeding above a limit you choose, low battery, and inactivity (the phone has not been used for a stretch you set) are Premium alerts. Emergency SOS alerts themselves are available without Premium.</p>
             </div>
           </article>
           <article class="chapter">
             <b>08</b>
             <div>
-              <h3>Profile, language, and diamonds</h3>
-              <p>Sign in with email or Google. Set a display name and photo. The interface can follow the phone language or be set to English, Japanese, or Korean. Diamonds buy map decorations — frames, icons, hats, and crowns. You can watch an optional rewarded ad for a small diamond amount, or buy a diamond pack in Google Play. Decorations do not change who can see your location.</p>
+              <h3 data-i18n="home.f8.title">Profile, language, and diamonds</h3>
+              <p data-i18n="home.f8.body">Sign in with email or Google. Set a display name and photo. The interface can follow the phone language or be set to English, Japanese, or Korean. Diamonds buy map decorations — frames, icons, hats, and crowns. You can watch an optional rewarded ad for a small diamond amount, or buy a diamond pack in Google Play. Decorations do not change who can see your location.</p>
             </div>
           </article>
         </div>
@@ -175,14 +179,14 @@
         <div class="band">
           <div class="sos-grid">
             <div>
-              <p class="kicker">Limits worth knowing</p>
-              <h2 id="sos-title">A group alert, not a rescue service.</h2>
-              <p>Keep My People tells the people in your group where a sharing phone is, within the accuracy of GPS, Wi-Fi, and the phone’s own power limits. A pin can be late, coarse, or missing indoors and underground. If someone is in danger, contact local emergency services directly.</p>
-              <p><a href="how-to/">Step-by-step setup, permissions, and SOS</a></p>
+              <p class="kicker" data-i18n="home.sos.kicker">Limits worth knowing</p>
+              <h2 id="sos-title" data-i18n="home.sos.title">A group alert, not a rescue service.</h2>
+              <p data-i18n="home.sos.body">Keep My People tells the people in your group where a sharing phone is, within the accuracy of GPS, Wi-Fi, and the phone’s own power limits. A pin can be late, coarse, or missing indoors and underground. If someone is in danger, contact local emergency services directly.</p>
+              <p><a href="how-to/" data-i18n="home.sos.link">Step-by-step setup, permissions, and SOS</a></p>
             </div>
             <div class="sos-card">
-              <h3>What SOS sends</h3>
-              <p>A push to the current group, the time, and location if the phone had one. Members can open that point on the group map. The sender can end the alert. There is no surrounding-audio upload.</p>
+              <h3 data-i18n="home.sos.cardTitle">What SOS sends</h3>
+              <p data-i18n="home.sos.cardBody">A push to the current group, the time, and location if the phone had one. Members can open that point on the group map. The sender can end the alert. There is no surrounding-audio upload.</p>
             </div>
           </div>
         </div>
@@ -190,34 +194,34 @@
 
       <section class="section" id="plans">
         <div class="section-head">
-          <p class="kicker">Plans</p>
-          <h2>Free, and one Premium subscription.</h2>
-          <p>Premium is a monthly or yearly subscription through Google Play. The store shows the price for your country. If a price has not loaded yet, the app shows $4.99 a month and $39.99 a year as placeholders.</p>
+          <p class="kicker" data-i18n="home.plans.kicker">Plans</p>
+          <h2 data-i18n="home.plans.title">Free, and one Premium subscription.</h2>
+          <p data-i18n="home.plans.body">Premium is a monthly or yearly subscription through Google Play. The store shows the price for your country. If a price has not loaded yet, the app shows $4.99 a month and $39.99 a year as placeholders.</p>
         </div>
         <div class="plans-wrap">
         <table class="plans">
-          <caption class="price-note">Comparison of the free plan and Premium in Keep My People.</caption>
+          <caption class="price-note" data-i18n="home.plans.caption">Comparison of the free plan and Premium in Keep My People.</caption>
           <thead>
             <tr>
-              <th scope="col">Capability</th>
-              <th scope="col">Free</th>
-              <th scope="col">Premium</th>
+              <th scope="col" data-i18n="home.plans.cap">Capability</th>
+              <th scope="col" data-i18n="home.plans.free">Free</th>
+              <th scope="col" data-i18n="home.plans.premium">Premium</th>
             </tr>
           </thead>
           <tbody>
-            <tr><th scope="row">Live location inside your groups</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-            <tr><th scope="row">Groups of up to 20, invites, chat, meetup pin</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-            <tr><th scope="row">SOS to the group</th><td>Yes, incoming alert vibrates</td><td>Yes, vibration and optional sound</td></tr>
-            <tr><th scope="row">Saved places</th><td>1</td><td>Up to 10</td></tr>
-            <tr><th scope="row">Place alerts and distance alerts</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-            <tr><th scope="row">Route history playback</th><td>Recent preview after an ad</td><td>Today through about 30 days, no ad</td></tr>
-            <tr><th scope="row">Another member’s stay map and drive report</th><td>No</td><td class="yes">Yes</td></tr>
-            <tr><th scope="row">Driving, speeding, battery, and inactivity alerts</th><td>No</td><td class="yes">Yes</td></tr>
-            <tr><th scope="row">Ads on the map and profile</th><td>Shown</td><td>Removed</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r1">Live location inside your groups</th><td class="yes" data-i18n="home.yes">Yes</td><td class="yes" data-i18n="home.yes">Yes</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r2">Groups of up to 20, invites, chat, meetup pin</th><td class="yes" data-i18n="home.yes">Yes</td><td class="yes" data-i18n="home.yes">Yes</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r3">SOS to the group</th><td data-i18n="home.plans.r3f">Yes, incoming alert vibrates</td><td data-i18n="home.plans.r3p">Yes, vibration and optional sound</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r4">Saved places</th><td data-i18n="home.plans.r4f">1</td><td data-i18n="home.plans.r4p">Up to 10</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r5">Place alerts and distance alerts</th><td class="yes" data-i18n="home.yes">Yes</td><td class="yes" data-i18n="home.yes">Yes</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r6">Route history playback</th><td data-i18n="home.plans.r6f">Recent preview after an ad</td><td data-i18n="home.plans.r6p">Today through about 30 days, no ad</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r7">Another member’s stay map and drive report</th><td data-i18n="home.no">No</td><td class="yes" data-i18n="home.yes">Yes</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r8">Driving, speeding, battery, and inactivity alerts</th><td data-i18n="home.no">No</td><td class="yes" data-i18n="home.yes">Yes</td></tr>
+            <tr><th scope="row" data-i18n="home.plans.r9">Ads on the map and profile</th><td data-i18n="home.plans.r9f">Shown</td><td data-i18n="home.plans.r9p">Removed</td></tr>
           </tbody>
         </table>
         </div>
-        <p class="price-note">Cancel Premium in Google Play. Access continues until the period you already paid for ends. Deleting the app, or deleting the account, does not by itself cancel a Play subscription.</p>
+        <p class="price-note" data-i18n="home.plans.note">Cancel Premium in Google Play. Access continues until the period you already paid for ends. Deleting the app, or deleting the account, does not by itself cancel a Play subscription.</p>
       </section>
     </div>
   </main>
@@ -226,27 +230,28 @@
     <div class="wrap footer-grid">
       <div>
         <a class="brand" href="index.html" style="color:#f5fbfc"><img src="assets/icon.png" alt="" width="40" height="40"><span>Keep My People</span></a>
-        <p>Stay close. Stay safe.</p>
-        <p>Android package <code>com.keepmypeople</code><br>iOS app in development<br><a href="mailto:help@trade-arena.net">help@trade-arena.net</a></p>
+        <p data-i18n="common.tagline">Stay close. Stay safe.</p>
+        <p><span data-i18n="footer.package">Android package</span> <code>com.keepmypeople</code><br><span data-i18n="footer.iosDev">iOS app in development</span><br><a href="mailto:help@trade-arena.net">help@trade-arena.net</a></p>
       </div>
       <div>
-        <h2>Use</h2>
+        <h2 data-i18n="footer.use">Use</h2>
         <ul>
-          <li><a href="how-to/">How to use</a></li>
-          <li><a href="index.html#plans">Plans</a></li>
-          <li><a href="delete-account/">Delete your account</a></li>
+          <li><a href="how-to/" data-i18n="footer.howto">How to use</a></li>
+          <li><a href="index.html#plans" data-i18n="footer.plans">Plans</a></li>
+          <li><a href="delete-account/" data-i18n="footer.delete">Delete your account</a></li>
         </ul>
       </div>
       <div>
-        <h2>Policies</h2>
+        <h2 data-i18n="footer.policies">Policies</h2>
         <ul>
-          <li><a href="terms/">Terms of Use</a></li>
-          <li><a href="privacy/">Privacy Policy</a></li>
-          <li><a href="location/">Location Services Terms</a></li>
+          <li><a href="terms/" data-i18n="footer.terms">Terms of Use</a></li>
+          <li><a href="privacy/" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="location/" data-i18n="footer.location">Location Services Terms</a></li>
         </ul>
       </div>
     </div>
-    <div class="wrap legal-line">© Keep My People. Location is shared only inside groups you join.</div>
+    <div class="wrap legal-line" data-i18n="footer.copy">© Keep My People. Location is shared only inside groups you join.</div>
   </footer>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>

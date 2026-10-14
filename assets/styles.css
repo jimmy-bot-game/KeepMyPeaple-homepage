@@ -113,6 +113,80 @@ a:hover { color: #084e5f; }
 }
 .nav a[aria-current="page"] { color: #0a6d78; }
 .nav a:hover { color: #0a6d78; }
+.header-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px 18px;
+  flex-wrap: wrap;
+}
+.lang-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid var(--line);
+}
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 650;
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.lang-switch button[aria-pressed="true"] {
+  background: var(--navy-900);
+  color: #f5fbfc;
+}
+body { visibility: hidden; }
+body.i18n-ready { visibility: visible; }
+.optional { font-weight: 500; color: var(--muted); }
+html[data-font="ko"] body,
+html[data-font="ja"] body {
+  line-height: 1.75;
+}
+html[data-font="ko"] body { word-break: keep-all; }
+html[data-font="ko"] body,
+html[data-font="ko"] h1,
+html[data-font="ko"] h2,
+html[data-font="ko"] h3,
+html[data-font="ko"] .site-footer h2,
+html[data-font="ja"] body,
+html[data-font="ja"] h1,
+html[data-font="ja"] h2,
+html[data-font="ja"] h3,
+html[data-font="ja"] .site-footer h2 {
+  font-family: "Noto Sans KR", "Noto Sans JP", "Outfit", "Segoe UI", sans-serif;
+}
+html[data-font="ja"] body,
+html[data-font="ja"] h1,
+html[data-font="ja"] h2,
+html[data-font="ja"] h3,
+html[data-font="ja"] .site-footer h2 {
+  font-family: "Noto Sans JP", "Outfit", "Segoe UI", sans-serif;
+}
+html[data-font="ko"] h1,
+html[data-font="ko"] h2,
+html[data-font="ko"] h3,
+html[data-font="ja"] h1,
+html[data-font="ja"] h2,
+html[data-font="ja"] h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+}
+html[data-font="ko"] .kicker,
+html[data-font="ja"] .kicker,
+html[data-font="ko"] .site-footer h2,
+html[data-font="ja"] .site-footer h2 {
+  text-transform: none;
+  letter-spacing: 0;
+}
 
 .hero {
   display: grid;
@@ -447,7 +521,8 @@ textarea { min-height: 110px; resize: vertical; }
   .plans th:nth-child(2), .plans th:nth-child(3) { width: auto; }
   .nav { gap: 8px 12px; }
   .site-header { height: auto; padding: 12px 0; }
-  .site-header .wrap { align-items: flex-start; flex-direction: column; }
+  .site-header .wrap,
+  .header-end { align-items: flex-start; flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {

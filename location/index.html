@@ -10,100 +10,104 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles.css">
+  <noscript><style>body{visibility:visible}</style></noscript>
 </head>
-<body>
-  <a class="skip" href="#content">Skip to content</a>
+<body data-page="location">
+  <a class="skip" href="#content" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="../index.html"><img src="../assets/icon.png" alt="" width="40" height="40"><span>Keep My People</span></a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../index.html">Product</a>
-        <a href="../how-to/">How to use</a>
-        <a href="../index.html#plans">Plans</a>
-        <a href="../privacy/">Privacy</a>
-        <a href="../delete-account/">Delete account</a>
-      </nav>
+      <div class="header-end">
+        <nav class="nav" aria-label="Primary" data-i18n-aria="nav.label">
+          <a href="../index.html" data-i18n="nav.product">Product</a>
+          <a href="../how-to/" data-i18n="nav.howto">How to use</a>
+          <a href="../index.html#plans" data-i18n="nav.plans">Plans</a>
+          <a href="../privacy/" data-i18n="nav.privacy">Privacy</a>
+          <a href="../delete-account/" data-i18n="nav.delete">Delete account</a>
+        </nav>
+        <div class="lang-switch" data-lang-switch></div>
+      </div>
     </div>
   </header>
   <main id="content" class="wrap-narrow legal">
-    <p class="kicker">Keep My People</p>
-    <h1>Location Services Terms</h1>
-    <p class="updated">Last updated: October 14, 2026</p>
-    <p>These terms explain how precise location is handled in Keep My People. They are part of the <a href="../terms/">Terms of Use</a> and sit alongside the <a href="../privacy/">Privacy Policy</a>. They describe the product contract. They are not a registration, license, or statutory form under the location-information law of any one country.</p>
+    <p class="kicker" data-i18n="location.b01">Keep My People</p>
+    <h1 data-i18n="location.b02">Location Services Terms</h1>
+    <p class="updated" data-i18n="location.b03">Last updated: October 14, 2026</p>
+    <p data-i18n-html="location.b04">These terms explain how precise location is handled in Keep My People. They are part of the <a href="../terms/">Terms of Use</a> and sit alongside the <a href="../privacy/">Privacy Policy</a>. They describe the product contract. They are not a registration, license, or statutory form under the location-information law of any one country.</p>
 
-    <h2>1. What the location service is</h2>
-    <p>Keep My People shows a map of people who belong to the same group and who have chosen to share. The Android package is <code>com.keepmypeople</code>. The iOS app is in development and is not on the App Store. Until it is released, these terms apply to the Android app, and they will apply to the iOS app when that app is offered.</p>
-    <p>The service lets you:</p>
+    <h2 data-i18n="location.b05">1. What the location service is</h2>
+    <p data-i18n-html="location.b06">Keep My People shows a map of people who belong to the same group and who have chosen to share. The Android package is <code>com.keepmypeople</code>. The iOS app is in development and is not on the App Store. Until it is released, these terms apply to the Android app, and they will apply to the iOS app when that app is offered.</p>
+    <p data-i18n="location.b07">The service lets you:</p>
     <ul>
-      <li>Publish your live location to the current group while sharing is on.</li>
-      <li>See the live location of other members while their sharing is on.</li>
-      <li>Save named places and receive arrival, departure, or distance alerts.</li>
-      <li>Attach a location or a meetup point to group chat.</li>
-      <li>Send an SOS that includes the last known location when the phone has one.</li>
-      <li>On Premium, play back movement history, open another member’s stay map, and view a drive report built from those points.</li>
+      <li data-i18n="location.b08">Publish your live location to the current group while sharing is on.</li>
+      <li data-i18n="location.b09">See the live location of other members while their sharing is on.</li>
+      <li data-i18n="location.b10">Save named places and receive arrival, departure, or distance alerts.</li>
+      <li data-i18n="location.b11">Attach a location or a meetup point to group chat.</li>
+      <li data-i18n="location.b12">Send an SOS that includes the last known location when the phone has one.</li>
+      <li data-i18n="location.b13">On Premium, play back movement history, open another member’s stay map, and view a drive report built from those points.</li>
     </ul>
 
-    <h2>2. Consent comes first</h2>
-    <p>Location is collected only after the phone’s permission prompt is accepted and the in-app sharing switch is on. Sharing is off until you turn it on. Joining a group does not, by itself, publish your live location.</p>
-    <p>You can withdraw consent at any time by turning sharing off, by denying location permission in system settings, or by leaving the group. Withdrawal stops new live updates. It does not erase history that was already stored until that history expires or you delete the account, as described below.</p>
-    <p>You may share only for yourself, from a device you control. You may not turn on sharing on someone else’s phone by taking their credentials, and you may not pressure a person to keep sharing as a condition of something outside the app in a way that hides the switch from them.</p>
+    <h2 data-i18n="location.b14">2. Consent comes first</h2>
+    <p data-i18n="location.b15">Location is collected only after the phone’s permission prompt is accepted and the in-app sharing switch is on. Sharing is off until you turn it on. Joining a group does not, by itself, publish your live location.</p>
+    <p data-i18n="location.b16">You can withdraw consent at any time by turning sharing off, by denying location permission in system settings, or by leaving the group. Withdrawal stops new live updates. It does not erase history that was already stored until that history expires or you delete the account, as described below.</p>
+    <p data-i18n="location.b17">You may share only for yourself, from a device you control. You may not turn on sharing on someone else’s phone by taking their credentials, and you may not pressure a person to keep sharing as a condition of something outside the app in a way that hides the switch from them.</p>
 
-    <h2>3. When a point is collected</h2>
-    <p>A location point can include latitude, longitude, timestamp, accuracy, and battery level. Points are produced while sharing is on:</p>
+    <h2 data-i18n="location.b18">3. When a point is collected</h2>
+    <p data-i18n="location.b19">A location point can include latitude, longitude, timestamp, accuracy, and battery level. Points are produced while sharing is on:</p>
     <ul>
-      <li><strong>App in the foreground.</strong> While you are moving, a live update can go out about every 5 seconds, or after about 10 meters. While you are still, a heartbeat goes out about every 30 seconds. Points that fail an accuracy check are dropped. The pin you see for yourself can refresh faster than the update other people receive.</li>
-      <li><strong>App in the background.</strong> If you granted “Allow all the time” and left sharing on, updates are coarser: about 50 meters of movement, or about 3 minutes, and slower when the battery is low. Android may still delay or stop the app under its own battery rules.</li>
-      <li><strong>Offline.</strong> The phone can keep history locally and can hold the latest live point. When the network returns, history uploads in a batch and one current point is published. The missed trail is not played back as if it were live.</li>
+      <li data-i18n-html="location.b20"><strong>App in the foreground.</strong> While you are moving, a live update can go out about every 5 seconds, or after about 10 meters. While you are still, a heartbeat goes out about every 30 seconds. Points that fail an accuracy check are dropped. The pin you see for yourself can refresh faster than the update other people receive.</li>
+      <li data-i18n-html="location.b21"><strong>App in the background.</strong> If you granted “Allow all the time” and left sharing on, updates are coarser: about 50 meters of movement, or about 3 minutes, and slower when the battery is low. Android may still delay or stop the app under its own battery rules.</li>
+      <li data-i18n-html="location.b22"><strong>Offline.</strong> The phone can keep history locally and can hold the latest live point. When the network returns, history uploads in a batch and one current point is published. The missed trail is not played back as if it were live.</li>
     </ul>
-    <p>These intervals are product behavior, not a guarantee. Buildings, tunnels, aircraft mode, a denied permission, or a force-stopped app can leave a gap.</p>
+    <p data-i18n="location.b23">These intervals are product behavior, not a guarantee. Buildings, tunnels, aircraft mode, a denied permission, or a force-stopped app can leave a gap.</p>
 
-    <h2>4. Who receives a point</h2>
-    <p>A live point is available to members of the group that is active when it is sent. It is not published to people outside that group, and it is not placed on a public map. If you are in several groups, each group sees the sharing you do while that group is the one in use, according to the app’s current-group session.</p>
-    <p>Members can see that sharing is on or off, a battery percentage when one was reported, and a last-seen time. They do not receive your app login, your payment card, or your advertising identifier through the map.</p>
+    <h2 data-i18n="location.b24">4. Who receives a point</h2>
+    <p data-i18n="location.b25">A live point is available to members of the group that is active when it is sent. It is not published to people outside that group, and it is not placed on a public map. If you are in several groups, each group sees the sharing you do while that group is the one in use, according to the app’s current-group session.</p>
+    <p data-i18n="location.b26">Members can see that sharing is on or off, a battery percentage when one was reported, and a last-seen time. They do not receive your app login, your payment card, or your advertising identifier through the map.</p>
 
-    <h2>5. History, stays, and driving</h2>
-    <p>Server-side location history is kept for about 30 days and then deleted. It includes only intervals when sharing was on. Premium can play that history for today, yesterday, 7 days, or 30 days.</p>
-    <p>Stay areas are clusters of points where a phone remained. You can open your own stay map on the free plan. Opening another member’s stay map requires Premium.</p>
-    <p>Drive reports estimate trips from those points: count, distance, time moving, top speed, speeding relative to a threshold, and hard acceleration. They are a Premium view, except where a free account has unlocked a short recent-journey preview by watching an ad. The report is an estimate from the phone’s points. It is not a certified speed-camera record and it is not an insurance telematics device.</p>
+    <h2 data-i18n="location.b27">5. History, stays, and driving</h2>
+    <p data-i18n="location.b28">Server-side location history is kept for about 30 days and then deleted. It includes only intervals when sharing was on. Premium can play that history for today, yesterday, 7 days, or 30 days.</p>
+    <p data-i18n="location.b29">Stay areas are clusters of points where a phone remained. You can open your own stay map on the free plan. Opening another member’s stay map requires Premium.</p>
+    <p data-i18n="location.b30">Drive reports estimate trips from those points: count, distance, time moving, top speed, speeding relative to a threshold, and hard acceleration. They are a Premium view, except where a free account has unlocked a short recent-journey preview by watching an ad. The report is an estimate from the phone’s points. It is not a certified speed-camera record and it is not an insurance telematics device.</p>
 
-    <h2>6. Places and alerts</h2>
-    <p>A saved place is a name, an icon, and coordinates you choose, including “save where I am now”. Place alerts compare a sharing member’s points with those coordinates and can notify you on arrival or departure. Distance alerts use a radius around you. Driving, speeding, low-battery, and inactivity alerts are Premium settings. Inactivity means the member’s phone has not been used for the duration you set. It is not a medical monitoring service.</p>
+    <h2 data-i18n="location.b31">6. Places and alerts</h2>
+    <p data-i18n="location.b32">A saved place is a name, an icon, and coordinates you choose, including “save where I am now”. Place alerts compare a sharing member’s points with those coordinates and can notify you on arrival or departure. Distance alerts use a radius around you. Driving, speeding, low-battery, and inactivity alerts are Premium settings. Inactivity means the member’s phone has not been used for the duration you set. It is not a medical monitoring service.</p>
 
-    <h2>7. SOS and emergencies</h2>
-    <p>SOS sends a notification to the other members of the current group. When the phone has a fix, the alert includes that location and an accuracy estimate. When it does not, members are told that location was unavailable.</p>
-    <p>On Android, SOS can be started from the in-app button, which waits 10 seconds so you can cancel, or by turning the screen on and off 5 or more times quickly with the side button while the app is allowed to run. On iOS, once that app is released, the side button cannot be monitored. The designed triggers are a firm shake of 3 or more times while the app is open, or the in-app button.</p>
-    <p>SOS does not record audio, does not stream video, and does not contact police, ambulance, fire, or any other public emergency service. If you need those services, call them yourself. An incoming alert vibrates for about 15 seconds on the alarm stream. Premium can also play a sound. The alert stops early if the receiver leaves the SOS screen, opens the notification, or the sender ends it.</p>
+    <h2 data-i18n="location.b33">7. SOS and emergencies</h2>
+    <p data-i18n="location.b34">SOS sends a notification to the other members of the current group. When the phone has a fix, the alert includes that location and an accuracy estimate. When it does not, members are told that location was unavailable.</p>
+    <p data-i18n="location.b35">On Android, SOS can be started from the in-app button, which waits 10 seconds so you can cancel, or by turning the screen on and off 5 or more times quickly with the side button while the app is allowed to run. On iOS, once that app is released, the side button cannot be monitored. The designed triggers are a firm shake of 3 or more times while the app is open, or the in-app button.</p>
+    <p data-i18n="location.b36">SOS does not record audio, does not stream video, and does not contact police, ambulance, fire, or any other public emergency service. If you need those services, call them yourself. An incoming alert vibrates for about 15 seconds on the alarm stream. Premium can also play a sound. The alert stops early if the receiver leaves the SOS screen, opens the notification, or the sender ends it.</p>
 
-    <h2>8. Accuracy and availability</h2>
-    <p>Location is an estimate. Wi-Fi and cell positioning can place a pin on the wrong block. A reported accuracy of ±50 meters means the true position may be anywhere in that range, or outside it when the sensor is wrong. We filter some impossible jumps, and we still cannot promise that every point is correct. Do not rely on the map for navigation in traffic, for property boundaries, or for a rescue that requires a public emergency service.</p>
-    <p>Background sharing depends on the operating system. A phone that is restarted, force-stopped, out of battery, or placed in a restricted battery mode may stop sending until you open the app again.</p>
+    <h2 data-i18n="location.b37">8. Accuracy and availability</h2>
+    <p data-i18n="location.b38">Location is an estimate. Wi-Fi and cell positioning can place a pin on the wrong block. A reported accuracy of ±50 meters means the true position may be anywhere in that range, or outside it when the sensor is wrong. We filter some impossible jumps, and we still cannot promise that every point is correct. Do not rely on the map for navigation in traffic, for property boundaries, or for a rescue that requires a public emergency service.</p>
+    <p data-i18n="location.b39">Background sharing depends on the operating system. A phone that is restarted, force-stopped, out of battery, or placed in a restricted battery mode may stop sending until you open the app again.</p>
 
-    <h2>9. How long location is kept</h2>
+    <h2 data-i18n="location.b40">9. How long location is kept</h2>
     <ul>
-      <li>Live location: replaced by newer points while sharing is on, and no longer updated after sharing is off.</li>
-      <li>History: about 30 days, then deleted.</li>
-      <li>Saved places: until you delete them, leave the relevant data behind by deleting the account, or the group context that holds them is removed.</li>
-      <li>SOS events: kept with the account and removed or anonymized when the account is deleted after the 7-day window.</li>
-      <li>On-device queue: points waiting to upload sit in a local database on the phone until they are sent or the app data is cleared.</li>
+      <li data-i18n="location.b41">Live location: replaced by newer points while sharing is on, and no longer updated after sharing is off.</li>
+      <li data-i18n="location.b42">History: about 30 days, then deleted.</li>
+      <li data-i18n="location.b43">Saved places: until you delete them, leave the relevant data behind by deleting the account, or the group context that holds them is removed.</li>
+      <li data-i18n="location.b44">SOS events: kept with the account and removed or anonymized when the account is deleted after the 7-day window.</li>
+      <li data-i18n="location.b45">On-device queue: points waiting to upload sit in a local database on the phone until they are sent or the app data is cleared.</li>
     </ul>
-    <p>We do not keep a one-year archive, and we do not sell the trail.</p>
+    <p data-i18n="location.b46">We do not keep a one-year archive, and we do not sell the trail.</p>
 
-    <h2>10. Your controls</h2>
+    <h2 data-i18n="location.b47">10. Your controls</h2>
     <ul>
-      <li>Sharing switch in the app.</li>
-      <li>Android location permission, including whether background access is allowed.</li>
-      <li>Notification permission, which gates alerts but not the stored points themselves.</li>
-      <li>Leaving a group, which ends sharing and viewing for that group.</li>
-      <li>Deleting a saved place.</li>
-      <li>Deleting the account, described on the <a href="../delete-account/">deletion page</a>.</li>
+      <li data-i18n="location.b48">Sharing switch in the app.</li>
+      <li data-i18n="location.b49">Android location permission, including whether background access is allowed.</li>
+      <li data-i18n="location.b50">Notification permission, which gates alerts but not the stored points themselves.</li>
+      <li data-i18n="location.b51">Leaving a group, which ends sharing and viewing for that group.</li>
+      <li data-i18n="location.b52">Deleting a saved place.</li>
+      <li data-i18n-html="location.b53">Deleting the account, described on the <a href="../delete-account/">deletion page</a>.</li>
     </ul>
 
-    <h2>11. Children</h2>
-    <p>We do not knowingly collect location from a child under 13, or under the higher age required for digital consent where that child lives. A parent may use their own account. Contact help@trade-arena.net if you believe a child’s information is on the Service.</p>
+    <h2 data-i18n="location.b54">11. Children</h2>
+    <p data-i18n="location.b55">We do not knowingly collect location from a child under 13, or under the higher age required for digital consent where that child lives. A parent may use their own account. Contact help@trade-arena.net if you believe a child’s information is on the Service.</p>
 
-    <h2>12. Changes and contact</h2>
-    <p>We may update these terms. The date at the top will change, and a material change will be notified in the app when that is reasonably possible. Continued use of location sharing after the effective date is acceptance of the update. If you do not agree, turn sharing off and, if you wish, delete the account.</p>
-    <p>Operator: Keep My People<br>
+    <h2 data-i18n="location.b56">12. Changes and contact</h2>
+    <p data-i18n="location.b57">We may update these terms. The date at the top will change, and a material change will be notified in the app when that is reasonably possible. Continued use of location sharing after the effective date is acceptance of the update. If you do not agree, turn sharing off and, if you wish, delete the account.</p>
+    <p data-i18n-html="location.b58">Operator: Keep My People<br>
     Email: <a href="mailto:help@trade-arena.net">help@trade-arena.net</a><br>
     Android package: com.keepmypeople</p>
   </main>
@@ -114,22 +118,23 @@
         <p><a href="mailto:help@trade-arena.net">help@trade-arena.net</a></p>
       </div>
       <div>
-        <h2>Use</h2>
+        <h2 data-i18n="footer.use">Use</h2>
         <ul>
-          <li><a href="../how-to/">How to use</a></li>
-          <li><a href="../delete-account/">Delete your account</a></li>
+          <li><a href="../how-to/" data-i18n="footer.howto">How to use</a></li>
+          <li><a href="../delete-account/" data-i18n="footer.delete">Delete your account</a></li>
         </ul>
       </div>
       <div>
-        <h2>Policies</h2>
+        <h2 data-i18n="footer.policies">Policies</h2>
         <ul>
-          <li><a href="../terms/">Terms of Use</a></li>
-          <li><a href="../privacy/">Privacy Policy</a></li>
-          <li><a href="../location/">Location Services Terms</a></li>
+          <li><a href="../terms/" data-i18n="footer.terms">Terms of Use</a></li>
+          <li><a href="../privacy/" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="../location/" data-i18n="footer.location">Location Services Terms</a></li>
         </ul>
       </div>
     </div>
-    <div class="wrap legal-line">© Keep My People</div>
+    <div class="wrap legal-line" data-i18n="footer.copyShort">© Keep My People</div>
   </footer>
+  <script src="../assets/i18n.js"></script>
 </body>
 </html>

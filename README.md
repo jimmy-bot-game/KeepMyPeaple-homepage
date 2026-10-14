@@ -27,3 +27,7 @@ python -m http.server 4173
 ```
 
 Open `http://127.0.0.1:4173/`.
+
+## Languages
+
+The pages are written in English. Korean and Japanese are applied in the browser from `assets/i18n/ko.json` and `assets/i18n/ja.json`. The language follows `?lang=ko`, `?lang=ja`, or `?lang=en`, then the saved choice, then the browser language. The header switcher stores the choice and updates the address. English stays in the HTML, so a missing line falls back to English.

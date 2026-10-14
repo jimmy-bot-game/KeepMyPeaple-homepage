@@ -10,128 +10,133 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles.css">
+  <noscript><style>body{visibility:visible}</style></noscript>
 </head>
-<body>
-  <a class="skip" href="#content">Skip to content</a>
+<body data-page="delete">
+  <a class="skip" href="#content" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="../index.html"><img src="../assets/icon.png" alt="" width="40" height="40"><span>Keep My People</span></a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../index.html">Product</a>
-        <a href="../how-to/">How to use</a>
-        <a href="../index.html#plans">Plans</a>
-        <a href="../privacy/">Privacy</a>
-        <a href="../delete-account/" aria-current="page">Delete account</a>
-      </nav>
+      <div class="header-end">
+        <nav class="nav" aria-label="Primary" data-i18n-aria="nav.label">
+          <a href="../index.html" data-i18n="nav.product">Product</a>
+          <a href="../how-to/" data-i18n="nav.howto">How to use</a>
+          <a href="../index.html#plans" data-i18n="nav.plans">Plans</a>
+          <a href="../privacy/" data-i18n="nav.privacy">Privacy</a>
+          <a href="../delete-account/" aria-current="page" data-i18n="nav.delete">Delete account</a>
+        </nav>
+        <div class="lang-switch" data-lang-switch></div>
+      </div>
     </div>
   </header>
 
   <main id="content" class="wrap legal">
-    <p class="kicker">Keep My People · com.keepmypeople</p>
-    <h1>Delete your account</h1>
-    <p class="lede">You can delete a Keep My People account from the Android app, or by email if you cannot open the app. There is no separate website login. The iOS app is in development, so use the Android app or the email steps below.</p>
+    <p class="kicker" data-i18n="delete.b01">Keep My People · com.keepmypeople</p>
+    <h1 data-i18n="delete.b02">Delete your account</h1>
+    <p class="lede" data-i18n="delete.b03">You can delete a Keep My People account from the Android app, or by email if you cannot open the app. There is no separate website login. The iOS app is in development, so use the Android app or the email steps below.</p>
 
     <div class="callout">
-      <strong>Uninstalling is not deletion.</strong>
-      <p>Removing Keep My People from your phone leaves the account, location history, and chat on our servers. Follow one of the two paths below. After you request deletion you have <strong>7 days</strong> to change your mind by signing in again. When that window ends, the account and personal data are permanently removed or irreversibly anonymized, except the records listed under “What we keep”.</p>
+      <strong data-i18n="delete.uninstallTitle">Uninstalling is not deletion.</strong>
+      <p data-i18n-html="delete.b04">Removing Keep My People from your phone leaves the account, location history, and chat on our servers. Follow one of the two paths below. After you request deletion you have <strong>7 days</strong> to change your mind by signing in again. When that window ends, the account and personal data are permanently removed or irreversibly anonymized, except the records listed under “What we keep”.</p>
     </div>
 
-    <h2>Path 1 — In the Android app</h2>
-    <p>This is the direct path. It starts the 7-day window immediately.</p>
+    <h2 data-i18n="delete.b05">Path 1 — In the Android app</h2>
+    <p data-i18n="delete.b06">This is the direct path. It starts the 7-day window immediately.</p>
     <ol>
-      <li>Open Keep My People and sign in.</li>
-      <li>Open the menu, then <strong>Settings</strong>.</li>
-      <li>Choose <strong>Delete account</strong>.</li>
-      <li>Read the notice. Type <strong>DELETE</strong> and confirm.</li>
-      <li>The app signs you out and shows that deletion was requested.</li>
-      <li>To cancel during the 7 days, sign in again with the same account and confirm that you want to keep it. The pending-deletion screen is where that recovery happens.</li>
-      <li>If you do nothing, the account is permanently deleted after the 7 days.</li>
+      <li data-i18n="delete.b07">Open Keep My People and sign in.</li>
+      <li data-i18n-html="delete.b08">Open the menu, then <strong>Settings</strong>.</li>
+      <li data-i18n-html="delete.b09">Choose <strong>Delete account</strong>.</li>
+      <li data-i18n-html="delete.b10">Read the notice. Type <strong>DELETE</strong> and confirm.</li>
+      <li data-i18n="delete.b11">The app signs you out and shows that deletion was requested.</li>
+      <li data-i18n="delete.b12">To cancel during the 7 days, sign in again with the same account and confirm that you want to keep it. The pending-deletion screen is where that recovery happens.</li>
+      <li data-i18n="delete.b13">If you do nothing, the account is permanently deleted after the 7 days.</li>
     </ol>
 
-    <h2>Path 2 — Email, if you cannot open the app</h2>
-    <p>Send the request from the email address on the account to <a href="mailto:help@trade-arena.net">help@trade-arena.net</a>. Use the subject <strong>Account deletion request — Keep My People</strong>. Include the account email, and a display name if you have one. The same 7-day recovery window applies once we match the account: signing in during those 7 days cancels the request. If you no longer have that inbox, say so in the message and add anything that helps us find the account, such as the display name. We may ask a follow-up question before we schedule deletion.</p>
-    <p>There is no web form that deletes the account by itself. The form below only prepares that email and opens your mail app.</p>
+    <h2 data-i18n="delete.b14">Path 2 — Email, if you cannot open the app</h2>
+    <p data-i18n-html="delete.b15">Send the request from the email address on the account to <a href="mailto:help@trade-arena.net">help@trade-arena.net</a>. Use the subject <strong>Account deletion request — Keep My People</strong>. Include the account email, and a display name if you have one. The same 7-day recovery window applies once we match the account: signing in during those 7 days cancels the request. If you no longer have that inbox, say so in the message and add anything that helps us find the account, such as the display name. We may ask a follow-up question before we schedule deletion.</p>
+    <p data-i18n="delete.b16">There is no web form that deletes the account by itself. The form below only prepares that email and opens your mail app.</p>
 
     <form class="form" data-deletion-form novalidate>
-      <label>Email on the Keep My People account
+      <label><span data-i18n="delete.form.email">Email on the Keep My People account</span>
         <input name="email" type="email" autocomplete="email" required placeholder="you@example.com">
       </label>
-      <label>Display name <span style="font-weight:500;color:#4e6a72">(optional)</span>
-        <input name="displayName" type="text" autocomplete="name" placeholder="Name shown in the app">
+      <label><span data-i18n="delete.form.name">Display name</span> <span class="optional" data-i18n="common.optional">(optional)</span>
+        <input name="displayName" type="text" autocomplete="name" data-i18n-placeholder="delete.form.namePh" placeholder="Name shown in the app">
       </label>
-      <label>Anything else we should know <span style="font-weight:500;color:#4e6a72">(optional)</span>
-        <textarea name="note" placeholder="For example: I no longer have the phone, but I can still read this inbox."></textarea>
+      <label><span data-i18n="delete.form.note">Anything else we should know</span> <span class="optional" data-i18n="common.optional">(optional)</span>
+        <textarea name="note" data-i18n-placeholder="delete.form.notePh" placeholder="For example: I no longer have the phone, but I can still read this inbox."></textarea>
       </label>
       <label class="check">
         <input name="confirm" type="checkbox" required>
-        <span>I want my Keep My People account deleted. I understand the 7-day recovery window, and that some purchase or legal records may be kept after that.</span>
+        <span data-i18n="delete.form.confirm">I want my Keep My People account deleted. I understand the 7-day recovery window, and that some purchase or legal records may be kept after that.</span>
       </label>
-      <button class="btn btn-primary" type="submit">Prepare the deletion email</button>
+      <button class="btn btn-primary" type="submit" data-i18n="delete.b17">Prepare the deletion email</button>
       <div class="form-status" data-deletion-status>
-        <p>If your mail app did not open, copy the message below and send it to help@trade-arena.net.</p>
+        <p data-i18n="delete.b18">If your mail app did not open, copy the message below and send it to help@trade-arena.net.</p>
         <pre class="mono" data-deletion-preview></pre>
-        <button class="btn btn-ghost" type="button" data-copy-request>Copy message</button>
+        <button class="btn btn-ghost" type="button" data-copy-request data-i18n="delete.b19">Copy message</button>
       </div>
     </form>
     <noscript>
-      <p>Email help@trade-arena.net from the account address with the subject “Account deletion request — Keep My People” and the sentence “Please delete my Keep My People account.”</p>
+      <p data-i18n="delete.b20">Email help@trade-arena.net from the account address with the subject “Account deletion request — Keep My People” and the sentence “Please delete my Keep My People account.”</p>
     </noscript>
 
-    <h2>What is deleted or anonymized</h2>
-    <p>After the 7-day window, we delete or irreversibly anonymize personal data tied to the account, including:</p>
+    <h2 data-i18n="delete.b21">What is deleted or anonymized</h2>
+    <p data-i18n="delete.b22">After the 7-day window, we delete or irreversibly anonymize personal data tied to the account, including:</p>
     <ul>
-      <li>The login, email identity on the account, display name, profile photo, optional phone number, and language preference.</li>
-      <li>Membership in groups. You are removed from those groups. The groups themselves remain for the other members.</li>
-      <li>Chat messages that are attributable to you, which are deleted or irreversibly anonymized. Messages written by other people stay in the group.</li>
-      <li>Live location, location history, saved places, and SOS events you sent.</li>
-      <li>Push notification tokens, alert preferences, diamond balance, and cosmetic items on the profile.</li>
-      <li>Support tickets, where we can remove them without keeping a record the law requires.</li>
+      <li data-i18n="delete.b23">The login, email identity on the account, display name, profile photo, optional phone number, and language preference.</li>
+      <li data-i18n="delete.b24">Membership in groups. You are removed from those groups. The groups themselves remain for the other members.</li>
+      <li data-i18n="delete.b25">Chat messages that are attributable to you, which are deleted or irreversibly anonymized. Messages written by other people stay in the group.</li>
+      <li data-i18n="delete.b26">Live location, location history, saved places, and SOS events you sent.</li>
+      <li data-i18n="delete.b27">Push notification tokens, alert preferences, diamond balance, and cosmetic items on the profile.</li>
+      <li data-i18n="delete.b28">Support tickets, where we can remove them without keeping a record the law requires.</li>
     </ul>
-    <p>During the 7 days the data stays in place so you can recover the account by signing in.</p>
+    <p data-i18n="delete.b29">During the 7 days the data stays in place so you can recover the account by signing in.</p>
 
-    <h2>What we keep, and for how long</h2>
+    <h2 data-i18n="delete.b30">What we keep, and for how long</h2>
     <ul>
-      <li>Purchase and subscription records needed to honor Google Play refunds, chargebacks, fraud checks, and accounting duties. These are kept for the period the store dispute process or applicable law requires, then deleted or reduced to what that duty still needs. They are not used to rebuild a profile or to keep sharing your location.</li>
-      <li>A short security log of the deletion request itself, without your location history.</li>
-      <li>Information we are legally required to retain for a specific request. We do not keep it longer than that duty lasts.</li>
-      <li>Other members’ accounts, their locations, and their messages.</li>
+      <li data-i18n="delete.b31">Purchase and subscription records needed to honor Google Play refunds, chargebacks, fraud checks, and accounting duties. These are kept for the period the store dispute process or applicable law requires, then deleted or reduced to what that duty still needs. They are not used to rebuild a profile or to keep sharing your location.</li>
+      <li data-i18n="delete.b32">A short security log of the deletion request itself, without your location history.</li>
+      <li data-i18n="delete.b33">Information we are legally required to retain for a specific request. We do not keep it longer than that duty lasts.</li>
+      <li data-i18n="delete.b34">Other members’ accounts, their locations, and their messages.</li>
     </ul>
 
     <div class="callout coral">
-      <strong>Premium and diamonds are separate from account deletion.</strong>
-      <p>Deleting the account does not cancel a Google Play subscription. Cancel Premium in the Play Store subscription page, or you may still be billed. Diamond packs already consumed are not refunded by account deletion. Refunds follow Google Play’s rules.</p>
+      <strong data-i18n="delete.premiumTitle">Premium and diamonds are separate from account deletion.</strong>
+      <p data-i18n="delete.b35">Deleting the account does not cancel a Google Play subscription. Cancel Premium in the Play Store subscription page, or you may still be billed. Diamond packs already consumed are not refunded by account deletion. Refunds follow Google Play’s rules.</p>
     </div>
 
-    <h2>Related policies</h2>
-    <p>Read the <a href="../privacy/">Privacy Policy</a>, <a href="../terms/">Terms of Use</a>, and <a href="../location/">Location Services Terms</a>. Questions: <a href="mailto:help@trade-arena.net">help@trade-arena.net</a>.</p>
+    <h2 data-i18n="delete.b36">Related policies</h2>
+    <p data-i18n-html="delete.b37">Read the <a href="../privacy/">Privacy Policy</a>, <a href="../terms/">Terms of Use</a>, and <a href="../location/">Location Services Terms</a>. Questions: <a href="mailto:help@trade-arena.net">help@trade-arena.net</a>.</p>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
         <a class="brand" href="../index.html" style="color:#f5fbfc"><img src="../assets/icon.png" alt="" width="40" height="40"><span>Keep My People</span></a>
-        <p>Stay close. Stay safe.</p>
-        <p>Android package com.keepmypeople<br><a href="mailto:help@trade-arena.net">help@trade-arena.net</a></p>
+        <p data-i18n="common.tagline">Stay close. Stay safe.</p>
+        <p><span data-i18n="footer.package">Android package</span> com.keepmypeople<br><a href="mailto:help@trade-arena.net">help@trade-arena.net</a></p>
       </div>
       <div>
-        <h2>Use</h2>
+        <h2 data-i18n="footer.use">Use</h2>
         <ul>
-          <li><a href="../how-to/">How to use</a></li>
-          <li><a href="../index.html#plans">Plans</a></li>
-          <li><a href="../delete-account/">Delete your account</a></li>
+          <li><a href="../how-to/" data-i18n="footer.howto">How to use</a></li>
+          <li><a href="../index.html#plans" data-i18n="footer.plans">Plans</a></li>
+          <li><a href="../delete-account/" data-i18n="footer.delete">Delete your account</a></li>
         </ul>
       </div>
       <div>
-        <h2>Policies</h2>
+        <h2 data-i18n="footer.policies">Policies</h2>
         <ul>
-          <li><a href="../terms/">Terms of Use</a></li>
-          <li><a href="../privacy/">Privacy Policy</a></li>
-          <li><a href="../location/">Location Services Terms</a></li>
+          <li><a href="../terms/" data-i18n="footer.terms">Terms of Use</a></li>
+          <li><a href="../privacy/" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="../location/" data-i18n="footer.location">Location Services Terms</a></li>
         </ul>
       </div>
     </div>
-    <div class="wrap legal-line">© Keep My People</div>
+    <div class="wrap legal-line" data-i18n="footer.copyShort">© Keep My People</div>
   </footer>
+  <script src="../assets/i18n.js"></script>
   <script src="../assets/site.js"></script>
 </body>
 </html>
