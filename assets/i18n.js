@@ -125,6 +125,16 @@
     if (link.getAttribute("href") !== href) link.setAttribute("href", href);
   }
 
+  function regionLang() {
+    var tz = "";
+    try {
+      tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    } catch (err) {}
+    if (tz === "Asia/Seoul") return "ko";
+    if (tz === "Asia/Tokyo") return "ja";
+    return "en";
+  }
+
   function detect() {
     var q = new URLSearchParams(location.search).get("lang");
     if (LANGS.indexOf(q) >= 0) return q;
@@ -132,11 +142,7 @@
       var saved = localStorage.getItem(STORAGE);
       if (LANGS.indexOf(saved) >= 0) return saved;
     } catch (err) {}
-    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
-    nav = String(nav).toLowerCase();
-    if (nav.indexOf("ko") === 0) return "ko";
-    if (nav.indexOf("ja") === 0) return "ja";
-    return "en";
+    return regionLang();
   }
 
   function mountSwitch() {
